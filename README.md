@@ -1,2 +1,2 @@
-# Eoghan-Murphy.github.io
+# HCI-Project
 

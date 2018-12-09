@@ -21,6 +21,10 @@
   justify-content: space-around;
 }
 
+.accessibleNav {
+  margin-top: 20px;
+}
+
 .btn-huge{
     padding: 2vh 1vh;
 }
@@ -95,4 +99,12 @@ input, select, textarea, button{font-family:inherit !important;}
 
 .selected{
   background-color: #325791;
+}
+
+.employed {
+  color: green;
+}
+
+.rejected {
+  color: red;
 }

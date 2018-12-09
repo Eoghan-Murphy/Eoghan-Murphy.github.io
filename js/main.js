@@ -42,6 +42,20 @@ $(document).ready(function(){
     toggleLocalStorage("ADHD");
   });
 
+$(document).on('click', '#employBtn', function(elem) {
+  var item = $(this).parent();
+  $(this).parent().empty();
+
+  $(item).append('<p class="employed">Accepted</p>');
+});
+
+$(document).on('click', '#rejectBtn', function(elem) {
+  var item = $(this).parent();
+  $(this).parent().empty();
+
+  $(item).append('<p class="rejected">Rejected</p>');
+});
+
   $(document).on('click', '#undoBttn',function(){
     $("#undoMessage").text('Recent Changes Undone');
     setTimeout( function(){
