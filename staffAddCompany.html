@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>INTRA Redesign - Staff - Add Company</title>
+  </head>
+  <body>
+    <a id ="skip" href="#maincontent">Skip to main content</a>
+    <nav aria-label="INTRA">
+
+        <ul id="menubar1"
+              role="menubar"
+              aria-label="INTRA"
+              class= "list-unstyled">
+            <div class = "row justify-content-around">
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="staffDashboard.html">
+                 Dashboard
+              </a>
+            </li>
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="index.html">
+                Log Out
+              </a>
+            </li>
+            <li  class ="col-lg-2 mb-3">
+              <a id="AccessibilityBttn"
+                 class="btn btn-primary btn-lg btn-block mb-2"
+                 role="menuitem"
+                 aria-haspopup="true"
+                 aria-expanded="false"
+                 href="#">
+                Accessibility
+              </a>
+              <ul role="menu" class= "list-unstyled hidden" id="AccessibilityMenu" aria-label="Accessibility">
+                <li role="none">
+                  <button role="menuitem" id= "DyslexiaBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                     Dyslexia
+                  </button>
+                </li>
+                <li role="none">
+                  <button role="menuitem" id="ADHDBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                    ADHD
+                  </button>
+                </li>
+                <li role="none">
+                  <button id="BigTextBttn" class="btn btn-primary btn-lg btn-block mb-2"
+                    role="menuitem">
+                    Bigger Text
+                  </button>
+            </li>
+          </div>
+        </ul>
+    </nav>
+    <div class = "container text-center mt-3">
+      <div class="row justify-content-center">
+        <div class="col-sm-7">
+          <div class="form-group">
+            <h1>DCU INTRA - ADD COMPANY</h1>
+            <label for="name">Company Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Company Name">
+            <p id="nameHelp" class="sr-only">Please enter the name of the company here.</p>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="text" class="form-control" id="contact" aria-describedby="contactHelp" placeholder="Enter Company Contact (Email)">
+            <p id="contactHelp" class="sr-only">Please enter the email of the company here.</p>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter Company Phone Number">
+            <p id="phoneHelp" class="sr-only">Please enter your Phone number here.</p>
+          </div>
+          <div class="form-group">
+            <label for="url">URL</label>
+            <input type="text" class="form-control" id="url" aria-describedby="urlHelp" placeholder="Enter Company Website">
+            <p id="urlHelp" class="sr-only">Please enter the company webpage here.</p>
+          </div>
+          <div class="form-group">
+            <label for="des">Description</label>
+            <textarea class="form-control rounded-0" id="des" rows="10" aria-describedby="desHelp"></textarea>
+            <p id="desHelp" class="sr-only">A text area to enter the details about the position</p>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Password">
+            <p id="passwordHelp" class="sr-only">Please enter your INTRA password here.</p>
+          </div>
+          <div class="form-group">
+            <label for="cpassword">Confirm Password</label>
+            <input type="cpassword" class="form-control" id="cpassword" aria-describedby="cpasswordHelp" placeholder="Password">
+            <p id="cpasswordHelp" class="sr-only">Please confirm your INTRA password here.</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          <button class="btn btn-primary btn-lg">Undo</button>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>

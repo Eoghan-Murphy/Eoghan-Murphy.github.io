@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>INTRA Redesign - View Vacancy</title>
+</head>
+<body class = "verticalflex mainBodyVertical">
+  <a id ="skip" href="#maincontent">Skip to main content</a>
+  <nav aria-label="INTRA">
+
+      <ul id="menubar1"
+            role="menubar"
+            aria-label="INTRA"
+            class= "list-unstyled">
+          <div class = "row justify-content-around">
+          <li class ="col-lg-2 mb-3">
+            <a
+               class="btn btn-primary btn-lg btn-block"
+               role="menuitem"
+               aria-haspopup="false"
+               aria-expanded="false"
+               href="studentDashboard.html">
+               Dashboard
+            </a>
+          </li>
+          <li class ="col-lg-2 mb-3">
+            <a
+               class="btn btn-primary btn-lg btn-block"
+               role="menuitem"
+               aria-haspopup="false"
+               aria-expanded="false"
+               href="index.html">
+              Log Out
+            </a>
+          </li>
+          <li  class ="col-lg-2 mb-3">
+            <a id="AccessibilityBttn"
+               class="btn btn-primary btn-lg btn-block mb-2"
+               role="menuitem"
+               aria-haspopup="true"
+               aria-expanded="false"
+               href="#">
+              Accessibility
+            </a>
+            <ul role="menu" class= "list-unstyled hidden" id="AccessibilityMenu" aria-label="Accessibility">
+              <li role="none">
+                <button role="menuitem" id= "DyslexiaBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                   Dyslexia
+                </button>
+              </li>
+              <li role="none">
+                <button role="menuitem" id="ADHDBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                  ADHD
+                </button>
+              </li>
+              <li role="none">
+                <button id="BigTextBttn" class="btn btn-primary btn-lg btn-block mb-2"
+                  role="menuitem">
+                  Bigger Text
+                </button>
+          </li>
+        </div>
+      </ul>
+  </nav>
+  <div class = "container text-center mt-3 mb-3 verticalflex" id="maincontent">
+        <h1>DCU INTRA - Job Ad</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8" style="text-align: left">
+                <h2 class="mt-2 pageHeading">Software Developer <small style="float:right;"><span class="badge badge-success badge-pill">NEW!</span></small></h2>
+                <h4>Google Inc.</h4>
+                <hr>
+                <p class="jobItem"><i class="fas fa-search-location"></i> Dublin</p>
+                <p class="jobItem"><i class="fas fa-dollar-sign"></i> €5000 per week</p>
+
+                <div class="description">
+                    <h5 class="mt-4">Description:</h5>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+                <div class="qualifications">
+                    <h5 class="mt-4">Qualifications:</h5>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="qualifications-list">
+                        <li class="mt-2">Lorem ipsum dolor sit amet</li>
+                        <li class="mt-2">consectetur adipiscing elit</li>
+                        <li class="mt-2">sed do eiusmod tempor incididunt</li>
+                        <li class="mt-2">Lorem ipsum dolor sit amet</li>
+                        <li class="mt-2">consectetur adipiscing elit</li>
+                    </ul>
+                </div>
+
+                <div class="apply text-center mt-3">
+                    <button class="btn btn-primary">Apply</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

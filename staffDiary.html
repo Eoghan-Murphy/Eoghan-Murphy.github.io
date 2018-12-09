@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>INTRA Redesign - Staff - Add Company</title>
+  </head>
+  <body>
+    <a id ="skip" href="#maincontent">Skip to main content</a>
+    <nav aria-label="INTRA">
+
+        <ul id="menubar1"
+              role="menubar"
+              aria-label="INTRA"
+              class= "list-unstyled">
+            <div class = "row justify-content-around">
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="staffDashboard.html">
+                 Dashboard
+              </a>
+            </li>
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="index.html">
+                Log Out
+              </a>
+            </li>
+            <li  class ="col-lg-2 mb-3">
+              <a id="AccessibilityBttn"
+                 class="btn btn-primary btn-lg btn-block mb-2"
+                 role="menuitem"
+                 aria-haspopup="true"
+                 aria-expanded="false"
+                 href="#">
+                Accessibility
+              </a>
+              <ul role="menu" class= "list-unstyled hidden" id="AccessibilityMenu" aria-label="Accessibility">
+                <li role="none">
+                  <button role="menuitem" id= "DyslexiaBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                     Dyslexia
+                  </button>
+                </li>
+                <li role="none">
+                  <button role="menuitem" id="ADHDBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                    ADHD
+                  </button>
+                </li>
+                <li role="none">
+                  <button id="BigTextBttn" class="btn btn-primary btn-lg btn-block mb-2"
+                    role="menuitem">
+                    Bigger Text
+                  </button>
+            </li>
+          </div>
+        </ul>
+    </nav>
+    <div class = "container justify-content-center text-center mt-3 verticalflex mainBodyVertical" id="maincontent">
+      <div class = "row justify-content-center">
+        <div class="form-group">
+          <label for="dob">Date of Diary</label>
+          <input type="date" class="form-control" id="dob" aria-describedby="dobHelp" placeholder="1/11/2018">
+          <p id="dobHelp" class="sr-only">Please enter the date you want to see hte scheduled appointments for.</p>
+        </div>
+      </div>
+      <div class = "row  justify-content-center">
+        <h2> List of Interviews for <i>1/11/2018</i> </h2>
+      </div>
+      <div class = "row  justify-content-center">
+      <h3 class = "mt-3 mb-3">Amazon, Burlington Plaza, Burlington Rd, Dublin 4</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Name</th>
+            <th scope="col">Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>13:00</td>
+            <td>John Smith</td>
+            <td>2018_CASE</td>
+          </tr>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>14:00</td>
+            <td>Aoibhe Thornton</td>
+            <td>2018_CASE</td>
+          </tr>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>15:00</td>
+            <td>Jan Clarke</td>
+            <td>2018_CASE</td>
+          </tr>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>16:00</td>
+            <td>Joe Bloggs</td>
+            <td>2018_CASE</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class = "row  justify-content-center">
+      <h3>Fidelity Insurance, One Waterside, Citywest Business Campus, Kingswood Ave, Dublin 24</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Name</th>
+            <th scope="col">Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>13:00</td>
+            <td>Jim Power</td>
+            <td>2018_CASE</td>
+          </tr>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>14:00</td>
+            <td>Clare Daly</td>
+            <td>2018_EC</td>
+          </tr>
+          <tr>
+            <th scope="row">1/11/2018</th>
+            <td>15:00</td>
+            <td>Craig Danson</td>
+            <td>2018_CASE</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class ="row justify-content-center">
+        <div class = "col-sm-5">
+          <a href="staffDashboard.html" class="btn btn-primary btn-lg btn-block btn-huge mt - 2">Back to Dashboard</a>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>

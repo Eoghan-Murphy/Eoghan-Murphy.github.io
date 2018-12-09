@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>INTRA Redesign - Staff - Add Job</title>
+  </head>
+  <body>
+    <a id ="skip" href="#maincontent">Skip to main content</a>
+    <nav aria-label="INTRA">
+
+        <ul id="menubar1"
+              role="menubar"
+              aria-label="INTRA"
+              class= "list-unstyled">
+            <div class = "row justify-content-around">
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="staffDashboard.html">
+                 Dashboard
+              </a>
+            </li>
+            <li class ="col-lg-2 mb-3">
+              <a
+                 class="btn btn-primary btn-lg btn-block"
+                 role="menuitem"
+                 aria-haspopup="false"
+                 aria-expanded="false"
+                 href="index.html">
+                Log Out
+              </a>
+            </li>
+            <li  class ="col-lg-2 mb-3">
+              <a id="AccessibilityBttn"
+                 class="btn btn-primary btn-lg btn-block mb-2"
+                 role="menuitem"
+                 aria-haspopup="true"
+                 aria-expanded="false"
+                 href="#">
+                Accessibility
+              </a>
+              <ul role="menu" class= "list-unstyled hidden" id="AccessibilityMenu" aria-label="Accessibility">
+                <li role="none">
+                  <button role="menuitem" id= "DyslexiaBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                     Dyslexia
+                  </button>
+                </li>
+                <li role="none">
+                  <button role="menuitem" id="ADHDBttn" class="btn btn-primary btn-lg btn-block mb-2">
+                    ADHD
+                  </button>
+                </li>
+                <li role="none">
+                  <button id="BigTextBttn" class="btn btn-primary btn-lg btn-block mb-2"
+                    role="menuitem">
+                    Bigger Text
+                  </button>
+            </li>
+          </div>
+        </ul>
+    </nav>
+    <div class = "container text-center mt-3" id = "maincontent">
+      <div class="row justify-content-center">
+        <form>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <h1>DCU INTRA - ADD JOB</h1>
+            <label for="name">Job Title</label>
+            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Job Title">
+            <p id="nameHelp" class="sr-only">Please enter the job title here.</p>
+          </div>
+          <div class="form-group">
+            <label for="companyt">Company</label>
+            <input type="text" class="form-control" id="contact" aria-describedby="companyHelp" placeholder="Enter Company Name">
+            <p id="companyHelp" class="sr-only">Please enter the name of the company here.</p>
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" aria-describedby="locationHelp" placeholder="Enter Job Location">
+            <p id="companyHelp" class="sr-only">Please enter location here.</p>
+          </div>
+          <div class="form-group">
+            <label for="expiry">Expiry</label>
+            <input type="text" class="form-control" id="expiry" aria-describedby="expiryHelp" placeholder="Enter Job Expiry Date">
+            <p id="expiryHelp" class="sr-only">Please enter the job expiry data</p>
+          </div>
+          <div class="form-group">
+            <label for="des">Description</label>
+            <textarea class="form-control rounded-0" id="des" rows="10" aria-describedby="desHelp"></textarea>
+            <p id="desHelp" class="sr-only">A text area to enter the details about the =job</p>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Password">
+            <p id="passwordHelp" class="sr-only">Please enter your INTRA password here.</p>
+          </div>
+          <div class="form-group">
+            <label for="cpassword">Confirm Password</label>
+            <input type="cpassword" class="form-control" id="cpassword" aria-describedby="cpasswordHelp" placeholder="Password">
+            <p id="cpasswordHelp" class="sr-only">Please confirm your INTRA password here.</p>
+          </div>
+        </div>
+      </div>
+      <div class = "row justify-content-center" aria-live="asserive" atomic="true">
+        <p id="undoMessage"><p>
+      </div>
+      <div class = "row justify-content-center">
+          <div class = "col-sm-3 mb-3">
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </div>
+          </form>
+          <div class = "col-sm-3">
+            <button class="btn btn-primary btn-lg" id="undoBttn">Undo</button>
+          </div>
+      </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
