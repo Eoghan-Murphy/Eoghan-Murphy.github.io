@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $("#AccessibilityBttn").init();
+
 //used session storage so it wasnt AS permanent
   if (typeof(Storage) !== "undefined") {
     if(sessionStorage.accessList == null){

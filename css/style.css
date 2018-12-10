@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+.centreStyle{
+  text-align: center;
+}
+
 .hidden{
   position: absolute !important;
   top: -9999px !important;
@@ -107,4 +111,8 @@ input, select, textarea, button{font-family:inherit !important;}
 
 .rejected {
   color: red;
+}
+
+.menubutton{
+  margin: 1vw;
 }

@@ -11,65 +11,74 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>INTRA Redesign</title>
+    <script src="js/Menubar.js"></script>
+    <script src="js/MenuBarItem.js"></script>
+    <script src="js/PopUpMenuItem.js"></script>
+    <script src="js/PopUpMenu.js"></script>
+    <link rel="stylesheet" href="css/menubar.css">
+    <title>INTRA Redesign - Scheduled Interviews</title>
   </head>
-  <body class = "verticalflex mainBodyVertical">
-    <a id ="skip" href="#maincontent">Skip to main content</a>
-    <nav aria-label="INTRA">
-
-        <ul id="menubar1"
-              role="menubar"
-              aria-label="INTRA"
-              class= "list-unstyled">
-            <div class = "row justify-content-around">
-            <li class ="col-lg-2 mb-3">
-              <a
-                 class="btn btn-primary btn-lg btn-block"
-                 role="menuitem"
-                 aria-haspopup="false"
-                 aria-expanded="false"
-                 href="studentDashboard.html">
-                 Dashboard
+  <body class = "verticalflex mainBodyVertical centreStyle" class="mt-5">
+    <nav aria-label="Intra Navigation">
+      <ul id="menubar1"
+          role="menubar"
+          aria-label="Intra">
+        <li>
+          <a class="menubutton"
+            role="menuitem"
+             aria-haspopup="false"
+             href="index.html"
+             tabindex="0">
+            Log Out
+          </a>
+        </li>
+        <li>
+          <a role="menuitem"
+            class="menubutton"
+             aria-haspopup="true"
+             aria-expanded="false"
+             href="studentDashboard.html"
+             tabindex="-1">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a role="menuitem"
+            class="menubutton"
+             aria-haspopup="true"
+             aria-expanded="false"
+             href="#"
+             tabindex="-1">
+            Accessibility
+          </a>
+          <ul role="menu" aria-label="Accessibility">
+            <li role="none">
+              <a role="menuitem"
+                 href="#"
+                 id = "DyslexiaBttn"
+                 tabindex="-1">
+                Dyslexia
               </a>
             </li>
-            <li class ="col-lg-2 mb-3">
-              <a
-                 class="btn btn-primary btn-lg btn-block"
-                 role="menuitem"
-                 aria-haspopup="false"
-                 aria-expanded="false"
-                 href="index.html">
-                Log Out
+            <li role="none">
+              <a role="menuitem"
+                 href="#"
+                 id="ADHDBttn"
+                 tabindex="-1">
+                ADHD
               </a>
             </li>
-            <li  class ="col-lg-2 mb-3">
-              <a id="AccessibilityBttn"
-                 class="btn btn-primary btn-lg btn-block mb-2"
-                 role="menuitem"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 href="#">
-                Accessibility
+            <li role="none">
+              <a role="menuitem"
+                 href="#"
+                 id = "BigTextBttn"
+                 tabindex="-1">
+                Bigger Text
               </a>
-              <ul role="menu" class= "list-unstyled hidden" id="AccessibilityMenu" aria-label="Accessibility">
-                <li role="none">
-                  <button role="menuitem" id= "DyslexiaBttn" class="btn btn-primary btn-lg btn-block mb-2">
-                     Dyslexia
-                  </button>
-                </li>
-                <li role="none">
-                  <button role="menuitem" id="ADHDBttn" class="btn btn-primary btn-lg btn-block mb-2">
-                    ADHD
-                  </button>
-                </li>
-                <li role="none">
-                  <button id="BigTextBttn" class="btn btn-primary btn-lg btn-block mb-2"
-                    role="menuitem">
-                    Bigger Text
-                  </button>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </li>
+      </ul>
     </nav>
     <div class = "container text-center mt-3 verticalflex" id="maincontent">
         <h1>DCU INTRA - Scheduled Interviews</h1>
@@ -119,6 +128,10 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var menubar = new Menubar(document.getElementById('menubar1'));
+      menubar.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
