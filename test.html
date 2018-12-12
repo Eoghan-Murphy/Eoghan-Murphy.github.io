@@ -1,262 +1,96 @@
-<head>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="js/Menubar.js"></script>
-  <script src="js/MenuBarItem.js"></script>
-  <script src="js/PopUpMenuItem.js"></script>
-  <script src="js/PopUpMenu.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/menubar.css">
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/jasmine.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
-<nav aria-label="Mythical University">
-  <ul id="menubar1"
-      role="menubar"
-      aria-label="Mythical University">
-    <li>
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="#"
-         tabindex="0">
-        About
-      </a>
-      <ul role="menu" aria-label="About">
-        <li role="none">
-          <a role="menuitem"
-             href="mb-about.html#overview"
-             tabindex="-1">
-            Overview
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-about.html#admin"
-             tabindex="-1">
-            Administration
-          </a>
-        </li>
-        <li role="none">
-          <a id="menubar113"
-             role="menuitem"
-             href="#"
-             aria-haspopup="true"
-             aria-expanded="false"
-             tabindex="-1">
-            Facts
-          </a>
-          <ul role="menu" aria-label="Facts">
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#facts"
-                 tabindex="-1">
-                History
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#facts"
-                 tabindex="-1">
-                Current Statistics
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#facts"
-                 tabindex="-1">
-                Awards
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="#"
-             aria-haspopup="true"
-             aria-expanded="false"
-             tabindex="-1">
-            Campus
-            Tours
-          </a>
-          <ul role="menu" aria-label="Campus Tours">
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#tours"
-                 tabindex="-1">
-                For prospective students
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#tours"
-                 tabindex="-1">
-                For alumni
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-about.html#tours"
-                 tabindex="-1">
-                For visitors
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="#"
-         tabindex="-1">
-        Admissions
-      </a>
-      <ul role="menu" aria-label="Admissions">
-        <li role="none">
-          <a role="menuitem"
-             href="mb-admissions.html#apply"
-             tabindex="-1">
-            Apply
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="#"
-             aria-haspopup="true"
-             aria-expanded="false"
-             tabindex="-1">
-            Tuition
-          </a>
-          <ul role="menu" aria-label="Tuition Information">
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-admissions.html#tuition"
-                 tabindex="-1">
-                Undergraduate
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-admissions.html#tuition"
-                 tabindex="-1">
-                Graduate
-              </a>
-            </li>
-            <li role="none">
-              <a role="menuitem"
-                 href="mb-admissions.html#tuition"
-                 tabindex="-1">
-                Professional Schools
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-admissions.html#signup"
-             tabindex="-1">
-            Sign Up
-          </a>
-        </li>
-        <li role="separator"></li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-admissions.html#visit"
-             tabindex="-1">
-            Visit
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-admissions.html#photo"
-             tabindex="-1">
-            Photo Tour
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-admissions.html#connect"
-             tabindex="-1">
-            Connect
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="#"
-         tabindex="-1">
-        Academics
-      </a>
-      <ul role="menu" aria-label="Academics">
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#colleges"
-             tabindex="-1">
-            Colleges & Schools
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#programs"
-             tabindex="-1">
-            Programs of Study
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#honors"
-             tabindex="-1">
-            Honors Programs
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#online"
-             tabindex="-1">
-            Online Courses
-          </a>
-        </li>
-        <li role="separator"></li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#explorer"
-             tabindex="-1">
-            Course Explorer
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#register"
-             tabindex="-1">
-            Register for Class
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#academic"
-             tabindex="-1">
-            Academic Calendar
-          </a>
-        </li>
-        <li role="none">
-          <a role="menuitem"
-             href="mb-academics.html#tanscripts"
-             tabindex="-1">
-            Transscripts
-          </a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-<button>Hello</button>
-<script type="text/javascript">
-  var menubar = new Menubar(document.getElementById('menubar1'));
-  console.log("text")
-  menubar.init();
-</script>
-</body>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src = "js/jasmine.js"></script>
+    <script src = "js/jasmine-html.js"></script>
+    <script src = "js/boot.js"></script>
+    <script src="js/Menubar.js"></script>
+    <script src="js/MenuBarItem.js"></script>
+    <script src="js/PopUpMenuItem.js"></script>
+    <script src="js/PopUpMenu.js"></script>
+    <link rel="stylesheet" href="css/menubar.css">
+    <title>INTRA Redesign - Test Page</title>
+  </head>
+  <nav aria-label="Intra Navigation" class ="centreStyle">
+    <ul id="menubar1"
+        role="menubar"
+        aria-label="Intra">
+      <li>
+        <a class="menubutton"
+          role="menuitem"
+           aria-haspopup="false"
+           href="index.html"
+           tabindex="0">
+          Back
+        </a>
+      </li>
+      <li>
+        <a role="menuitem"
+          class="menubutton"
+           aria-haspopup="true"
+           aria-expanded="false"
+           href="#"
+           tabindex="-1">
+          Accessibility
+        </a>
+        <ul role="menu" aria-label="Accessibility">
+          <li role="none">
+            <a role="menuitem"
+               href="#"
+               id = "DyslexiaBttn"
+               tabindex="-1">
+              Dyslexia
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem"
+               href="#"
+               id="ADHDBttn"
+               tabindex="-1">
+              ADHD
+            </a>
+          </li>
+          <li role="none">
+            <a role="menuitem"
+               href="#"
+               id = "BigTextBttn"
+               tabindex="-1">
+              Bigger Text
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class ="row justify-content-center" aria-live="assertive" atomic="true">
+    <p id="undoMessage"></p>
+  </div>
+  <div class="row justify-content-center">
+    <div class = "col-sm-5">
+    <button class="btn btn-primary btn-lg btn-block mt-4" id="undoBttn">Undo Any Recent Changes</button>
+    </div>
+  </div>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var menubar = new Menubar(document.getElementById('menubar1'));
+      menubar.init();
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/accessibilitySpec.js"></script>
+    <script src="js/undoSpec.js"></script>
+  </body>
+</html>

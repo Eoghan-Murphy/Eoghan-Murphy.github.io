@@ -46,25 +46,39 @@ $(document).ready(function(){
 
 $(document).on('click', '#employBtn', function(elem) {
   var item = $(this).parent();
-  $(this).parent().empty();
+  item.empty();
 
   $(item).append('<p class="employed">Accepted</p>');
 });
 
 $(document).on('click', '#rejectBtn', function(elem) {
   var item = $(this).parent();
-  $(this).parent().empty();
+  item.empty();
 
   $(item).append('<p class="rejected">Rejected</p>');
 });
 
   $(document).on('click', '#undoBttn',function(){
-    $("#undoMessage").text('Recent Changes Undone');
-    setTimeout( function(){
-      $( "#undoMessage" ).fadeOut( "slow", function() {
-        $("#undoMessage").text('');
-      });
-  }  , 3000 );
+    $("#jobMessage").text('Recent Changes Undone');
+    setTimeout( function() {
+        $("#jobMessage").text('');
+    }, 3000 );
+
+    for(var i = 1; i <= 3; i++)
+    {
+      var status = '#status' + i;
+      var item = $(status);
+      item.empty();
+
+      $(item).append('<button id="employBtn">Employ</button> <button id="rejectBtn">Reject</button>');
+    }
+  })
+
+  $(document).on('click', '#submitNewJob',function(){
+    $("#jobMessage").text('New Job Added');
+    setTimeout( function() {
+        $("#jobMessage").text('');
+    }, 3000 );
   })
 
 });
