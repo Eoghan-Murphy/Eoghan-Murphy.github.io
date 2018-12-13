@@ -58,6 +58,13 @@ $(document).on('click', '#rejectBtn', function(elem) {
   $(item).append('<p class="rejected">Rejected</p>');
 });
 
+$(document).on('click', '#request', function(elem) {
+  var item = $(this).parent();
+  item.empty();
+
+  $(item).append('<p class="requested">Requested</p>')
+});
+
   $(document).on('click', '#undoBttn',function(){
     $("#jobMessage").text('Recent Changes Undone');
     setTimeout( function() {
@@ -74,10 +81,33 @@ $(document).on('click', '#rejectBtn', function(elem) {
     }
   })
 
+  $(document).on('click', '#undoEmployBttn',function(){
+    $("#jobMessage").text('Recent Changes Undone');
+    setTimeout( function() {
+        $("#jobMessage").text('');
+    }, 3000 );
+
+    for(var i = 1; i <= 3; i++)
+    {
+      var status = '#status' + i;
+      var item = $(status);
+      item.empty();
+
+      $(item).append('<button id="request">Request Interview</button>');
+    }
+  })
+
   $(document).on('click', '#submitNewJob',function(){
     $("#jobMessage").text('New Job Added');
     setTimeout( function() {
         $("#jobMessage").text('');
+    }, 3000 );
+  })
+
+  $(document).on('click', '#applyBtn',function(){
+    $("#applyMessage").text('Success! Job Applied For!');
+    setTimeout( function() {
+        $("#applyMessage").text('');
     }, 3000 );
   })
 

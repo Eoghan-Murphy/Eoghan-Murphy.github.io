@@ -19,7 +19,7 @@
     <title>INTRA Redesign - CVs for Employers</title>
   </head>
   <body class = "verticalflex mainBodyVertical centreStyle" class="mt-5">
-    <nav aria-label="Intra Navigation">
+    <nav aria-label="Intra Navigation" class="employeeNav">
       <ul id="menubar1"
           role="menubar"
           aria-label="Intra">
@@ -97,19 +97,19 @@
             <th scope="row">John Smith</th>
             <td>Data Engineer</td>
             <td><a href="employerCVView.html">CV Link</a></td>
-            <td><button>Request Interview</button></td>
+            <td id="status1" aria-live="assertive" atomic="true"><button id="request">Request Interview</button></td>
           </tr>
           <tr>
             <th scope="row">Jim Power</th>
             <td>Network Engineer</td>
             <td><a href="employerCVView.html">CV Link</a></td>
-            <td><button>Request Interview</button></td>
+            <td id="status2" aria-live="assertive" atomic="true"><button id="request">Request Interview</button></td>
           </tr>
           <tr>
             <th scope="row">Clare Daly</th>
             <td>Network Engineer</td>
             <td><a href="employerCVView.html">CV Link</a></td>
-            <td><button>Request Interview</button></td>
+            <td id="status3" aria-live="assertive" atomic="true"><button id="request">Request Interview</button></td>
           </tr>
         </tbody>
       </table>
@@ -118,7 +118,7 @@
       </div>
       <div class="row justify-content-center">
         <div class = "col-sm-5">
-        <button class="btn btn-primary btn-lg btn-block" id="undoBttn">Undo Any Recent Changes</button>
+        <button class="btn btn-primary btn-lg btn-block" id="undoEmployBttn">Undo Any Recent Changes</button>
         </div>
       </div>
     </div>
